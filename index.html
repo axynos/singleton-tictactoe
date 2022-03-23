@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Singleton ⚡️</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+      <h1>Singleton ⚡️ Tic-Tac-Toe</h1>
+      <h4 id="display-status">Starting game...</h4>
+
+      <div class="board-settings">
+        <div class="setting">
+          <label for="input-board-size">Board Size</label>
+          <input id="input-board-size"
+                 name="input-board-size"
+                 type="number"
+                 min="3"
+                 step="2"
+                 value="3" />
+        </div>
+
+        <div class="setting">
+          <label for="input-computer-player">Computer Player</label>
+          <select value="-" name="input-computer-player" id="input-computer-player">
+            <option value="-">None</option>
+            <option value="x">Player X</option>
+            <option value="o">Player O</option>
+          </select>
+        </div>
+
+        <div class="setting">
+          <label for="input-first-player">First Player</label>
+          <select value="x" name="input-first-player" id="input-first-player">
+            <option value="x">Player X</option>
+            <option value="o">Player O</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="board" class="board"
+        data-board-size="5"
+        data-players="x,o"
+        data-computer-delay="150"
+        >
+      </div>
+    </body>
+</html>
